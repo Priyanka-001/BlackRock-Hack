@@ -1,5 +1,5 @@
 import Stocklist from './Stocklist'
-// import './stocks-inter.scss'
+import '../../styles/stocksinter.scss'
 import { fetchStockDetails, fetchQuote } from "./api/stockApi";
 import { useEffect, useState } from 'react';
 import Navbar from '../Navbar';
@@ -42,7 +42,7 @@ function StocksInter() {
   return (
   <div>
     <Navbar/>
-    <div className='main'>
+    <div className='stocksinter'>
       <h1>Here are some stocks to look at</h1>
       <p>To look for more information, click on view.</p>
       <Stocklist stocks={data}/>

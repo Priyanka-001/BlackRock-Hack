@@ -6,7 +6,7 @@ import Chart from "./stock-components/Chart";
 import StckHeader from "./stock-components/StckHeader";
 import { fetchStockDetails, fetchQuote } from "./api/stockApi";
 import Navbar from '../Navbar';
-// import './stockdashboard.css';
+import './stockdashboard.css';
 
 const StockDashboard = () => {
   const location = useLocation();
@@ -44,7 +44,7 @@ const StockDashboard = () => {
       <Navbar/>
         <div className='stckdashboard'>
           <div className="stckheader">
-            <StckHeader name={stockDetails.name} />
+            <StckHeader name={stockDetails.name} price={quote.pc} change={quote.d}/>
           </div>
           <div className="stckchart">
             <Chart symbol={symbol}/>

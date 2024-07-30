@@ -21,7 +21,7 @@
     font-weight: 400;
 }
 .pchange{
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 5px;
     border-radius: 10px;
     font-weight: 400;
@@ -30,7 +30,7 @@
     box-shadow: inset 0px 0px 15px 8px rgba(76,223,142,1);
 }
 .nchange{
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 5px;
     border-radius: 10px;
     font-weight: 400;

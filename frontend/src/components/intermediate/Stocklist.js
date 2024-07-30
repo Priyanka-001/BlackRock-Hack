@@ -1,4 +1,4 @@
-// import './stocklist.scss'
+import '../../styles/stocklist.scss'
 import { useNavigate } from 'react-router-dom';
 
 function Stocklist(props){
@@ -7,10 +7,10 @@ function Stocklist(props){
       navigate('/stock-dashboard', { state: { symbol } });
     };
     return(
-    <div className='mainashmeet'>
+    <div className='stocklist'>
       <table>
         <thead>
-          <th>Sr. No.</th>
+          <th>SR. NO.</th>
           <th>COMPANY</th>
           <th>SYMBOL</th>
           <th>PRICE <span>Rs.</span></th>
@@ -27,8 +27,8 @@ function Stocklist(props){
                 <td>{stock.symbol}</td>
                 <td>{stock.prize}</td>
                 <td>{stock.dayhigh}</td>
-                <td><button className='butt2'>{stock.change}% </button></td>
-                <td><button onClick={() => handleButtonClick(stock.symbol)}>VIEW</button></td>
+                <td><button className={`${stock.change > 0 ? "pchange" : "nchange"}`}>{stock.change}% </button></td>
+                <td><button className='view' onClick={() => handleButtonClick(stock.symbol)}>VIEW</button></td>
             </tr>
            )}
         </tbody>
