@@ -1,0 +1,32 @@
+.intermediate-dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    h1{
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .cards{
+        display: flex;
+        width: 70%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+        padding: 20px;
+        div{
+            width: 45%;
+            text-align: center;
+            box-shadow:0 7px 29px 0 rgba(153, 255, 204, 0.55);
+            background-color: rgba(153, 255, 204, 0.55);
+            padding: 20px;
+            h2{
+                font-size: 2rem;
+            }
+            &:hover {
+                transform: scale(1.04); /* Scale up the box on hover */
+            }
+        }
+    }
+}
