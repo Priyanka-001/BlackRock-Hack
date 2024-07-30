@@ -11,7 +11,7 @@ const coin = async (req, res, next) => {
                 message: 'User not found',
             });
         }
-
+        console.log('points displayed')
         res.status(200).json({
             success: true,
             points: user.points,
