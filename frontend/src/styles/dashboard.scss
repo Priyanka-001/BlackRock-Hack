@@ -1,0 +1,41 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    h1{
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        article{
+            width: 25%;
+            height: 50vh;
+            text-align: center;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            h2{
+                font-size: 2.2em;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            button{
+                background-color: rgb(93, 0, 255);
+                color: white;
+                padding: 15px;
+                width: 70%;
+                border-radius: 10px;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

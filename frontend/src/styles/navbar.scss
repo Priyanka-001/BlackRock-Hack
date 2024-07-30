@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar{
+    background-color: rgb(93, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 10px 50px;
+    .logo{
+        font-family: Ubuntu;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .navmain2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 10%;
+        .coins{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            .value{
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
