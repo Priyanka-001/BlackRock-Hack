@@ -8,7 +8,7 @@ const studentRouter = require('./Routes/login/user');
 app.use(express.json()); // Middleware to parse JSON body
 
 const cors = require("cors");
-app.use(cors({ credentials: true, origin: ["http://localhost:5000", ""] }));
+app.use(cors({ credentials: true, origin: ["http://localhost:3001", ""] }));
 
 app.use('/user', studentRouter); // Mount the router
 

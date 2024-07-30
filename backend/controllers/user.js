@@ -6,10 +6,10 @@ const bcrypt=require('bcrypt');
 const createUser=async (req, res) => {
     try {
     //store student data from body parser
-    const { name, email, password } = req.body;
+    const { username, email, password } = req.body;
 
     const user = await userSchema.create({
-      name,
+      username,
       email,
       password
     });
