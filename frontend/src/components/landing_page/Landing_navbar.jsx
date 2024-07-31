@@ -1,10 +1,12 @@
 import React from 'react'
 import './landing_navbar.css'
 import { Link } from "react-router-dom";
-function navbar() {
+import logo from '../logo.png'
+
+function Landnavbar() {
   return (
     <div className='login-navbar'>
-      <div>LOGO</div>
+      <img src={logo} className='logo'></img>
       <div className='right-login-navbar'>
         <div>Home</div>
         <div>About</div>
@@ -15,4 +17,4 @@ function navbar() {
   )
 }
 
-export default navbar
+export default Landnavbar

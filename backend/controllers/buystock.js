@@ -2,6 +2,7 @@ const User = require('../Model/user.js');
 
 exports.buyPoints = async (req, res) => {
   const { buyPoints } = req.body;
+  console.log(buyPoints);
 
   if (!buyPoints) {
     return res.status(400).json({ message: 'Missing required fields' });

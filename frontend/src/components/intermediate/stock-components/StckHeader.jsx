@@ -2,7 +2,7 @@ import React from "react";
 
 const StckHeader = ({ name, price, change }) => {
   const HandleClickBuy = async (price) => {
-    const buyPoints = price;
+    let buyPoints = price;
     try {
       const token = sessionStorage.getItem("token");
       const response = await fetch('http://localhost:8000/user/buystock', {
@@ -29,7 +29,7 @@ const StckHeader = ({ name, price, change }) => {
     const sellPoints = price*change;
     try {
       const token = sessionStorage.getItem("token");
-      const response = await fetch('http://localhost:8000/user/buystock', {
+      const response = await fetch('http://localhost:8000/user/sellstock', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

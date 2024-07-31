@@ -21,7 +21,7 @@ exports.sellPoints = async (req, res) => {
     // Deduct points
     user.points += sellPoints;
     await user.save();
-
+    console.log('sell');
     res.status(200).json({ message: 'Investment successful', points: user.points });
   } catch (error) {
     console.error(error);

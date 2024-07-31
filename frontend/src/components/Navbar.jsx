@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { FaSackDollar } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
 import "../styles/navbar.scss";
-
+import logo from './logo.png'
 const Navbar = () => {
   const [points, setPoints] = useState(0); // Initialize with 0 or another default value
-
+  
   useEffect(() => {
     // Fetch current user data when the component mounts
     const fetchUserData = async () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
         if (response.ok) {
           const data = await response.json();
           if (data.success) {
-            setPoints(data.points); // Set user's points
+            setPoints(parseFloat(data.points.toFixed(2))); // Set user's points
           }
         } else {
           console.error("Failed to fetch user data");
