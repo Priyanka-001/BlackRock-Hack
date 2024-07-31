@@ -13,6 +13,9 @@ import IntermediateDashboard from './components/intermediate/IntermediateDashboa
 import AdvancedDashboard from './components/advanced/AdvancedDashboard';
 import StocksInter from './components/intermediate/StocksInter';
 import StockDashboard from './components/intermediate/StockDashboard';
+import StocksBeg from './components/beginner/StocksBeg';
+import MutualFundsBeg from './components/beginner/MutualFundsBeg';
+import ForExBeg from './components/beginner/ForExBeg';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           <Route path="/advanced-dashboard" element={<AdvancedDashboard/>}></Route>
           <Route path="/stocks-inter" element={<StocksInter/>}></Route>
           <Route path="/stock-dashboard" element={<StockDashboard/>}></Route>
+          <Route path="/stocks-beg" element={<StocksBeg/>}></Route>
+          <Route path="/mutualfunds-beg" element={<MutualFundsBeg/>}></Route>
+          <Route path="/forex-beg" element={<ForExBeg/>}></Route>
         </Routes>
         </AuthProvider>
       </Router>
