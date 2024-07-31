@@ -13,6 +13,10 @@ import IntermediateDashboard from './components/intermediate/IntermediateDashboa
 import AdvancedDashboard from './components/advanced/AdvancedDashboard';
 import StocksInter from './components/intermediate/StocksInter';
 import StockDashboard from './components/intermediate/StockDashboard';
+import ListStock from './components/advanced/cardStocks/ListStock';
+import List from './components/advanced/cardForex/List';
+import Main_landing from './components/landing_page/main_landing';
+
 
 function App() {
   return (
@@ -20,7 +24,7 @@ function App() {
       <Router>
       <AuthProvider>
         <Routes>
-          <Route path="/" element={<LandingPage/>}></Route>
+          <Route path="/" element={<Main_landing/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/signup" element={<Signup/>}></Route>
           {/* <Route path="/signup" element={<Signup/>}></Route> */}
@@ -30,6 +34,10 @@ function App() {
           <Route path="/advanced-dashboard" element={<AdvancedDashboard/>}></Route>
           <Route path="/stocks-inter" element={<StocksInter/>}></Route>
           <Route path="/stock-dashboard" element={<StockDashboard/>}></Route>
+          <Route path="/stock-advanced" element={<ListStock/>}></Route>
+          <Route path="/forex-advanced" element={<List/>}></Route>
+
+
         </Routes>
         </AuthProvider>
       </Router>
