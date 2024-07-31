@@ -6,7 +6,7 @@ function Footer(){
 
     <div class="footer-left">
 
-      <div className='img'><img src={logoAshmeet}/></div>
+      <div className='img'>MarketMentor</div>
 
       <p class="footer-links">
         <a href="#">Home</a> ·
