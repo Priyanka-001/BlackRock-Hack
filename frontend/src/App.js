@@ -17,6 +17,9 @@ import ListStock from './components/advanced/cardStocks/ListStock';
 import List from './components/advanced/cardForex/List';
 import Main_landing from './components/landing_page/main_landing';
 
+import StocksBeg from './components/beginner/StocksBeg';
+import MutualFundsBeg from './components/beginner/MutualFundsBeg';
+import ForExBeg from './components/beginner/ForExBeg';
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
           <Route path="/forex-advanced" element={<List/>}></Route>
 
 
+          <Route path="/stocks-beg" element={<StocksBeg/>}></Route>
+          <Route path="/mutualfunds-beg" element={<MutualFundsBeg/>}></Route>
+          <Route path="/forex-beg" element={<ForExBeg/>}></Route>
         </Routes>
         </AuthProvider>
       </Router>
