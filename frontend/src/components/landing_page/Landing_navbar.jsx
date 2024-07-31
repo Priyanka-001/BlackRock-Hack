@@ -6,7 +6,7 @@ import logo from '../logo.png'
 function Landnavbar() {
   return (
     <div className='login-navbar'>
-      <img src={logo} className='logo'></img>
+      <div className='logo'>MarketMentor</div>
       <div className='right-login-navbar'>
         <div>Home</div>
         <div>About</div>
